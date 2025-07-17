@@ -1,6 +1,6 @@
 import streamlit as st
 import google.generativeai as genai
-genai.configure(api_key="AIzaSyDMTeCR4lgcE5c4bfWM6B7iDxas-tj28ck")
+genai.configure(api_key="YOUR-API-KEY")
 st.markdown("""<style>.stApp{background-color: #3386ff;} </style>""",unsafe_allow_html=True)
 def create_daily_plan(prompt):
     model=genai.GenerativeModel("gemini-1.5-flash")
